@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E3E3E3;
+  color: #04AE00;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 50px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+}
+
+.score-board {
+  margin: 20px auto;
+  width: 200px;
+  font-size: 50px;
+  padding: 10px;
+  position: relative;
+}
+
+.label {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#user-label {
+  position: absolute;
+  top: 20px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+.result {
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.choices {
+  margin: 40px 0;
+}
+
+.choice {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #330000;
+  background-color: #FFF;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+h1 {
+  padding: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+}
+  
+.button {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+}
+  
+.result {
+  font-size: 20px;
+}
+  
+img {
+  height: 60px;
+  width: 60px;
+}
+  
+.score-board {
+  font-size: 30px;
+  width: 150px;
+}
+  
+.choices {
+  margin: 20px 0;
+}  
+  
+.label {
+  font-size: 14px;
+}
+
+#user-label {
+  top: 10px;
+}
+
+#computer-label {
+  top: 10px;
+}  
+}
+
+body {
+	padding: 10px;
+	text-align: center;
+}
+
+.container {
+	max-width: 400px; 
+	margin: 0 auto;
+}
+
+	header {
+		font-size: 20px;
+		line-height: 30px;
+		min-height: 30px;
+		font-weight: bold;
+		padding: 0 30px;
+	}
+
+	.content {
+		min-height: 30px;
+		padding: 5px 30px;
+	}
+

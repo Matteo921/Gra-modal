@@ -1,0 +1,33 @@
+{
+   "name": "Gra-modal",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "npm run watch:*",
+      "watch:browser": "browser-sync start --server --files css/*.css *.html",
+      "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
+      "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "globstar": "^1.0.0",
+      "nu-html-checker": "^0.1.0",
+      "node-sass": "^4.12.0",
+      "onchange": "^6.0.0",
+      "browser-sync": "^2.26.7"
+   },
+   "dependencies": {
+      "normalize.css": "^8.0.1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Matteo921/Gra-modal.git"
+   },
+   "bugs": {
+      "url": "https://github.com/Matteo921/Gra-modal/issues"
+   },
+   "homepage": "https://github.com/Matteo921/Gra-modal#readme"
+}
