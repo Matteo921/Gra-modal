@@ -113,44 +113,44 @@ function main () {
 }
 
 
-main();
+// main();
 
 
-(function(){ 
+// (function(){ 
 	
-	var showModal = function(event){
-		event.preventDefault();
-		var items = document.querySelectorAll('.overlay .modal');
-		for (var i = 0; i < items.length; i++) {
-			items[i].classList.remove('show');
+// 	var showModal = function(event){
+// 		event.preventDefault();
+// 		var items = document.querySelectorAll('.overlay .modal');
+// 		for (var i = 0; i < items.length; i++) {
+// 			items[i].classList.remove('show');
 
-		}
-		document.querySelector('#modal-overlay').classList.add('show');
-		document.querySelector(event.target.getAttribute('href')).classList.add('show');
-	};
+// 		}
+// 		document.querySelector('#modal-overlay').classList.add('show');
+// 		document.querySelector(event.target.getAttribute('href')).classList.add('show');
+// 	};
 	
-	var modalLinks = document.querySelectorAll('.show-modal');
+// 	var modalLinks = document.querySelectorAll('.show-modal');
 	
-	for (var i = 0; i < modalLinks.length; i++){
-		modalLinks[i].addEventListener('click', showModal);
-	}
+// 	for (var i = 0; i < modalLinks.length; i++){
+// 		modalLinks[i].addEventListener('click', showModal);
+// 	}
 	
-	var hideModal = function(event){
-		event.preventDefault(); 
-		document.querySelector('#modal-overlay').classList.remove('show');
-	};
+// 	var hideModal = function(event){
+// 		event.preventDefault(); 
+// 		document.querySelector('#modal-overlay').classList.remove('show');
+// 	};
 	
-	var closeButtons = document.querySelectorAll('.modal .close');
+// 	var closeButtons = document.querySelectorAll('.modal .close');
 	
-	for(var i = 0; i < closeButtons.length; i++){
-		closeButtons[i].addEventListener('click', hideModal);
-	}
+// 	for(var i = 0; i < closeButtons.length; i++){
+// 		closeButtons[i].addEventListener('click', hideModal);
+// 	}
 	
-	document.querySelector('#modal-overlay').addEventListener('click', function(e) {
+// 	document.querySelector('#modal-overlay').addEventListener('click', function(e) {
 		
-		if (e.target === this) {
-			hideModal(e);
-		};
-	});
+// 		if (e.target === this) {
+// 			hideModal(e);
+// 		};
+// 	});
 
-})(); 
+// })(); 

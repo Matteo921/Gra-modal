@@ -24,6 +24,11 @@ h1 {
   position: relative;
 }
 
+.score-board {
+  font-size: 30px;
+  width: 150px;
+}
+
 .label {
   background-color: #000;
   border-radius: 10px;
@@ -111,10 +116,6 @@ img:hover {
     height: 60px;
     width: 60px;
   }
-  .score-board {
-    font-size: 30px;
-    width: 150px;
-  }
   .choices {
     margin: 20px 0;
   }
@@ -150,6 +151,28 @@ header {
 .content {
   min-height: 30px;
   padding: 5px 30px;
+}
+
+/*Modal*/
+.scoretable {
+  padding: 40px;
+}
+
+.scoretable label {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: absolute;
+  left: 25%;
+  font-weight: bold;
+  color: black;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.emp {
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
