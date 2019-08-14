@@ -1,210 +1,208 @@
 * {
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #E3E3E3;
-  color: #04AE00;
-  text-align: center;
-  padding: 10px;
-  text-align: center;
+    background-color: #E3E3E3;
+    color: #04AE00;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
 }
 
 h1 {
-  padding: 20px;
-  font-size: 50px;
-  text-transform: uppercase;
-  word-spacing: 20px;
+    padding: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    word-spacing: 20px;
 }
 
 .score-board {
-  margin: 20px auto;
-  width: 200px;
-  font-size: 50px;
-  padding: 10px;
-  position: relative;
+    margin: 20px auto;
+    width: 200px;
+    font-size: 50px;
+    padding: 10px;
+    position: relative;
 }
+
 .score-board {
-  font-size: 30px;
-  width: 150px;
+    font-size: 30px;
+    width: 150px;
 }
+
 .label {
-  background-color: #000;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 16px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 #user-label {
-  position: absolute;
-  top: 20px;
-  left: -25px;
+    position: absolute;
+    top: 20px;
+    left: -25px;
 }
 
 #computer-label {
-  position: absolute;
-  top: 20px;
-  right: -40px;
+    position: absolute;
+    top: 20px;
+    right: -40px;
 }
 
 .result {
-  font-size: 40px;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .choices {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 
 .choice {
-  display: inline-block;
-  margin: 0 20px;
-  padding: 10px;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
 }
 
 img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  transition: all 0.5s ease;
-  &:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
 }
 
 .button {
-  width: 200px;
-  height: 60px;
-  border-radius: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  color: #330000;
-  background-color: #FFF;
-  transition: all 0.5s ease;
-  &:hover {
-    transform: scale(1.5);
-    cursor: pointer;
-  }
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #330000;
+    background-color: #FFF;
+    transition: all 0.5s ease;
+    &:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+    }
 }
 
 .hide {
-  display: none;
+    display: none;
 }
-
 
 @media (max-width: 767px) {
-h1 {
-  padding: 20px;
-  font-size: 30px;
-  text-transform: uppercase;
-  word-spacing: 20px;
-}
-  
-.button {
-  width: 120px;
-  height: 40px;
-  font-size: 20px;
-}
-  
-.result {
-  font-size: 20px;
-}
-  
-img {
-  height: 60px;
-  width: 60px;
-}
-  
-
-  
-.choices {
-  margin: 20px 0;
-}  
-  
-.label {
-  font-size: 14px;
-}
-
-#user-label {
-  top: 10px;
+    h1 {
+        padding: 20px;
+        font-size: 30px;
+        text-transform: uppercase;
+        word-spacing: 20px;
+    }
+    .button {
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .result {
+        font-size: 20px;
+    }
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    .choices {
+        margin: 20px 0;
+    }
+    .label {
+        font-size: 14px;
+    }
+    #user-label {
+        top: 10px;
+    }
+    #computer-label {
+        top: 10px;
+    }
 }
 
-#computer-label {
-  top: 10px;
-}  
-}
 
 /*Modal*/
-.scoretable{
-  padding:40px;
 
+.scoretable {
+    padding: 40px;
+    label {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        position: absolute;
+        left: 25%;
+        font-weight: bold;
+        color: black;
+    }
+}
 
-  label{
-    margin-right: 30px;
-    margin-bottom: 30px;
-    position:absolute;
-    left:25%;
-    font-weight: bold;
-    color: black;
-  }
+.row {
+    margin-bottom: 20px;
 }
-.row{
-  margin-bottom: 20px;
+
+.emp {
+    justify-content: center;
 }
-.emp{
-  justify-content: center;
-}
+
 .container {
-  max-width: 400px; 
-  margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  
-  &.show {
-    display: block;
-  }
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    &.show {
+        display: block;
+    }
 }
 
 .modal {
-  display: none;
-  background: #fff;
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  text-decoration-style: none;
-  transition: 3s;
-  &.show {
-    display: block;
-    
-  }
+    display: none;
+    background: #fff;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    text-decoration-style: none;
+    transition: 3s;
+    justify-content: center;
+    &.show {
+        display: block;
+    }
 }
-.show-modal{
-  text-decoration: none;
+
+.show-modal {
+    text-decoration: none;
     color: #080a0a;
     font-size: 20px;
 }
-.activepar{
-  transition:5s;
-  &:hover{
-    transform: scale(1.5);
-    font-weight: bold;
-    transition: 3s;
-  }
+
+.activepar {
+    transition: 5s;
+    padding: 50px;
+    &:hover {
+        transform: scale(1.5);
+        font-weight: bold;
+        transition: 3s;
+    }
 }
+
 .close {
     position: absolute;
     right: 0;
@@ -213,7 +211,7 @@ img {
     color: #000;
     text-decoration: none;
 }
-  
+
 header {
     font-size: 20px;
     line-height: 30px;
@@ -225,4 +223,18 @@ header {
 .content {
     min-height: 30px;
     padding: 5px 30px;
+}
+
+.table-parent {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #080a0a;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+div .user-score {
+    position: absolute;
+    top: auto;
+    left: 200px;
 }

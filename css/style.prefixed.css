@@ -177,7 +177,7 @@ img:hover {
 .modal {
   display: none;
   background: #fff;
-  width: 200px;
+  width: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -185,6 +185,8 @@ img:hover {
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
   transition: 3s;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .modal.show {
@@ -199,6 +201,7 @@ img:hover {
 
 .activepar {
   transition: 5s;
+  padding: 50px;
 }
 
 .activepar:hover {
@@ -227,5 +230,21 @@ header {
 .content {
   min-height: 30px;
   padding: 5px 30px;
+}
+
+.table-parent {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 1px solid #080a0a;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+div .user-score {
+  position: absolute;
+  top: auto;
+  left: 200px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

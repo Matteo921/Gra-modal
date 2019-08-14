@@ -1,75 +1,65 @@
 <html lang="pl">
-  <head>
-	<meta charset="utf-8">
+
+<head>
+    <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
     <link href="sass/normalize.scss" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
+</head>
 
 <body class="board">
 
-	<header>
-		<h1>Rock Paper Scissors</h1>
-	</header>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
 
-	<div class="score-board">
-		<div id="user-label" class="label">User</div>
-		<div id="computer-label" class="label">Computer</div>
-		<span id="user-score">0</span>:<span id="computer-score">0</span>
-	</div>
+    <div class="score-board">
+        <div id="user-label" class="label">User</div>
+        <div id="computer-label" class="label">Computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
 
-	<div class="result">
-		<p> Good Luck :)</p>
-	</div>
- 
-	<div class="choices hide ">
-		<div id="r" class="choice player-move" data-move="rock">
-			<img src="https://i.ibb.co/VJTPjvb/rock.png">
-		</div>
-		<div id="p" class="choice player-move" data-move="paper">
-			<img src="https://i.ibb.co/54ZXnDJ/scissors.png">
-		 </div>
-		<div id="s" class="choice player-move" data-move="scissors">
-			<img src="https://i.ibb.co/TmkHcWK/paper.png">
-		</div>
-	</div>
-  
-  <div id="start">
-    <button id="button" class="button"> Start Game </button>
-  </div>
-  
- <div class="scoretable">
- 	<form>
- 	<div class="row">
- 		<label for="roundnumber">Round-number	&rarr;</label><input class="emp" type="text" name="" id="roundnumber">
- 	</div>
- 	<div class="row">
- 		<label for="player-move">Player-move 	&rarr;</label><input class="emp" type="text" name="" id="player-move">
- 	</div>
- 	<div class="row">
- 		<label for="computer-move">Computer-move 	&rarr;</label><input class="emp" type="text" name="" id="computer-move">
- 	</div>
- 	<div class="row">
- 		<label for="roundscore">Round-score 	&rarr;</label><input class="emp" type="text" name="" id="roundscore">
- 	</div>
- 	</form>
- </div>
- <!-- Modal -->
- 	<div class="activepar">
- 		<p><a href="#modal-one" class="show-modal">Show score!</a></p>
- 	</div>
- 	<div class="overlay" id="modal-overlay">
-	<div class="modal" id="modal-one">
-		<a href="#" class="close">x</a>
-		<header>Show me more!</header>
-		<div class="content">
-			<p>Dolor sit amet!</p>
-		</div>
-	</div>
-	
-</div>
-</body> 
+    <div class="result">
+        <p> Good Luck :)</p>
+    </div>
+
+    <div class="choices hide ">
+        <div id="r" class="choice player-move" data-move="rock">
+            <img src="https://i.ibb.co/VJTPjvb/rock.png">
+        </div>
+        <div id="p" class="choice player-move" data-move="paper">
+            <img src="https://i.ibb.co/54ZXnDJ/scissors.png">
+        </div>
+        <div id="s" class="choice player-move" data-move="scissors">
+            <img src="https://i.ibb.co/TmkHcWK/paper.png">
+        </div>
+    </div>
+
+    <div id="start">
+        <button id="button" class="button"> Start Game </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="activepar">
+        <p><a href="#modal-one" class="show-modal">Show score!</a></p>
+    </div>
+    <div class="overlay" id="modal-overlay">
+        <div class="modal" id="modal-one">
+            <a href="#" class="close">x</a>
+            <header>Result!</header>
+            <div class="content" id="table-container">
+                <div class="table-parent">
+                    <div class="text-reuslt ">Punkt dla &darr;</div>
+                    <div class="user-score ">Gracz</div>
+                    <div class="computer-score ">Komputer</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
 
 <script src="js/script.js"></script>
+
 </html>
