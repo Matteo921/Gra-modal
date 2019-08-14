@@ -86,3 +86,4 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+ package.json lock.package.json node_modules/
